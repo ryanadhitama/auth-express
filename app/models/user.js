@@ -28,3 +28,24 @@ module.exports = (sequelize, DataTypes) => {
   );
   return User;
 };
+
+/**
+ * @openapi
+ * components:
+ *    schemas:
+ *      User:
+ *        type: object
+ *        properties:
+ *          id:
+ *            type: number
+ *          name:
+ *            type: string
+ *          email:
+ *            type: string
+ *          bio:
+ *            type: string
+ *          created_at:
+ *            type: date
+ *          updated_at:
+ *            type: date
+ */

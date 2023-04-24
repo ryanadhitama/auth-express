@@ -22,11 +22,11 @@
 
 ## Endpoint list
 
-| Route        | Method | Description     |
-| ------------ | ------ | --------------- |
-| /v1/login    | `POST` | Login for user  |
-| /v1/register | `POST` | Create new user |
-| /v1/me       | `GET`  | Get user login  |
+| Route        | Method | Description         |
+| ------------ | ------ | ------------------- |
+| /v1/login    | `POST` | Login existing user |
+| /v1/register | `POST` | Create new user     |
+| /v1/me       | `GET`  | Get user login      |
 
 ## Swagger
 

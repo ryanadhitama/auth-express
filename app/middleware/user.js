@@ -24,7 +24,7 @@ const user = async (req, res, next) => {
     });
     next();
   } catch (error) {
-    return res.status(400).json({
+    return res.status(401).json({
       success: false,
       message: 'Token invalid'
     });
