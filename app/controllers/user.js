@@ -1,6 +1,7 @@
 const index = async (req, res, next) => {
-  return res.send({
-    test: 'user'
+  return res.status(200).json({
+    success: true,
+    data: req.user
   });
 };
 
