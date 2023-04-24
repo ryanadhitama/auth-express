@@ -1,0 +1,47 @@
+{
+  "name": "auth-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.39.0",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "husky": "^8.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0",
+    "prettier": "^2.8.8",
+    "sequelize": "^6.31.0",
+    "sequelize-cli": "^6.6.0",
+    "superstruct": "^1.0.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:create": "sequelize db:create",
+    "db:migrate": "sequelize db:migrate",
+    "db:seed": "sequelize db:seed:undo:all && sequelize db:seed:all",
+    "prepare": "husky install",
+    "start": "nodemon -r dotenv/config bin/www",
+    "lint": "prettier --ignore-path .prettierignore --write .  && prettier --ignore-path .prettierignore --check . && eslint --ignore-path .eslintignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ryanadhitama@github.com/ryanadhitama/auth-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanadhitama/auth-express/issues"
+  },
+  "homepage": "https://github.com/ryanadhitama/auth-express#readme"
+}
